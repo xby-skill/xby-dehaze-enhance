@@ -1,0 +1,34 @@
+{
+  "name" : "xby-dehaze-enhance",
+  "version" : "1.0.0",
+  "description" : "输入有雾或低可见度模糊的图片，自动去除雾霾与干扰，还原场景清晰细节与真实色彩，适用于航拍图、监控、道路及风景摄影等场景。返回JSON格式数据，包含结果图片下载链接。",
+  "keywords" : [ "xby-dehaze-enhance", "xby", "dehaze", "enhance", "去", "雾" ],
+  "license" : "MIT",
+  "type" : "module",
+  "main" : "./dist/index.js",
+  "files" : [ "dist", "cordis.patch.yml" ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/xby_skill/xby-dehaze-enhance.git"
+  },
+  "homepage" : "",
+  "bugs" : {
+    "url" : "https://github.com/xby_skill/xby-dehaze-enhance/issues"
+  },
+  "author" : "",
+  "scripts" : {
+    "build" : "tsc",
+    "watch" : "tsc --watch"
+  },
+  "dependencies" : { },
+  "peerDependencies" : { },
+  "dsh" : {
+    "bundle" : {
+      "patch" : "./cordis.patch.yml"
+    }
+  },
+  "devDependencies" : {
+    "@types/node" : "^26.3.0",
+    "typescript" : "^7.0.2"
+  }
+}
